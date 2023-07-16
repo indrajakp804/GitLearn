@@ -1,0 +1,26 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #result {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+ 
