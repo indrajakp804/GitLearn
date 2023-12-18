@@ -105,7 +105,7 @@ header {
   border-top: 1px solid #ccc;
 }
 
-.projects h2, .publications h2, .hobbies h2, .skills h2, .about-me h2{
+.projects h2, .publications h2, .hobbies h2, .skills h2{
   color: #df1a34; 
 }
 
@@ -114,6 +114,6 @@ header {
   padding: 0; 
 }
 
-.projects li, .publications li, .hobbies li {
+.projects li, .hobbies li {
   margin-bottom: 10px;
 }
