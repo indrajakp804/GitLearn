@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indraja K P.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="main" class="center">
+      <div id="particles-js"></div>
+      <div class="user_info">
+        <h1 class="user_name">Indraja K P</h1>
+        <p>Web Developer</p>
+        <a href="#About" class="btn">About Me</a>
+      </div>
+      <div class="user_img">
+        <img src="img.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about center" id="About">
+    <div class="center">
+      <h1 class="about_heading">About</h1>
+      <p>
+        Hello! My name is Indraja K P, and I'm a web developer.
+        I have a diverse set of skills,ranging from design,
+        to HTML + CSS + javascript.
+      </p>
+    </div>
+        <img src="img.jpg" alt="">
+    </section>
+    <section class="skills center" id="Skills">
+      <p class="skill_head">Skills</p>
+      <div class="skill_box center">
+        <div class="box">
+          <i class="fab fa-html5 fa-4x"></i>
+          <p>HTML</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-css3-alt fa-4x"></i>
+          <p>CSS</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-js-square fa-4x"></i>
+          <p>Javascript</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-react fa-4x"></i>
+          <p>React</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-node-js fa-4x"></i>
+          <p>Node Js</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-desktop fa-4x"></i>
+          <p>UI/UX</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects center" id="Projects">
+      <h1 class="project_heading">Projects</h1>
+      <div class="container center">
+        <div class="main_box center">
+          <div class="icon center">
+            <i class="fas fa-virus"></i>
+          </div>
+          <div class="box">
+            <h1>Low Power Accuracy-Configurable RD4A-PPA based Hybrid Adder</h1>
+            <p> 
+                Synthesis and simulation were done in Xilinx ISE and language used was Verilog HDL.
+                FPGA used for the project was Artix-7.
+            </p>
+          </div>
+        </div>
+        <div class="main_box center">
+          <div class="icon center">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="box">
+            <h1>elf-Balancing and Owner-Following Electric Bicycle</h1>
+            <p>
+                 PID algorithm-based 
+                program and object following algorithm with an owner 
+                recognition method using IR was utilized. 
+            </p>
+          </div>
+        </div>
+        <div class="main_box center">
+          <div class="icon center">
+            <i class="fas fa-film"></i>
+          </div>
+          <div class="box">
+            <h1>Marketing Campaign for Banking Products</h1>
+            <p>
+                Led a Project on “Marketing Campaign for Banking Products” based on Bank loans
+                Classification and Analysis using different machine learning algorithms.
+            </p>
+          </div>
+        </div>
+        <div class="main_box center">
+          <div class="icon center">
+            <i class="fas fa-hashtag"></i>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="center">
+      <h1>Stay Connected</h1>
+      <div class="social_media_icons">
+        <a href="https://github.com/indrajakp804/" target="_blank_"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/indraja-k-p-3620571b9"
+          target="_blank_"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Toggle -->
+    <div class="toggle center active" id="toggle">
+      <div class="box center">
+          <a href="#main" class="links center"> 
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+      </div>
+      <div class="box center">
+          <a href="#About" class="links center"> 
+            <i class="fas fa-address-card"></i>
+            <p>About</p>
+          </a>
+        <input type="checkbox" name="" id="btn" />
+          <a href="#Skills" class="links center"> 
+            <i class="fas fa-sliders-h"></i>
+            <p>Skills</p>
+          </a>
+      </div>
+      <div class="box">
+          <a href="#Projects" class=" links center"> 
+            <i class="fas fa-tasks"></i>
+            <p>Projects</p>
+          </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+      const toggle = document.getElementById("toggle");
+      const btn = document.getElementById("btn");
+      const links = document.querySelectorAll(".links");
+
+      btn.addEventListener("click", (e) => {
+        toggle.classList.toggle("active");
+      });
+      links.forEach((e) => {
+        e.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        })
+      });
+    </script>
+  </body>
+</html>
