@@ -1,0 +1,119 @@
+/* styles.css file */
+
+body {
+  font-family:'Poppins' sans-serif;
+  margin: 0 20px; /* Added spacing to the left end */
+  padding: 0;
+  background-color: #fff; /* Set background color to white */
+  color: #333; /* Set text color */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.page {
+  margin: 0px; /* Adjust as needed */
+  background-image: url('bk1.jpg'); /* Replace 'background1.jpg' with your image file for page 1 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page1 {
+  margin: 0px; /* Adjust as needed */
+  background-image: url('bk2.jfif'); /* Replace 'background1.jpg' with your image file for page 1 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 200px; /* Adjustable size */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 80%;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links img {
+  width: 40px; /* Adjustable size */
+  margin: 0 10px;
+}
+
+.contact, .resume {
+  text-align: center;
+  margin: 20px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Adjustable color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume-button:hover {
+  background-color: #2980b9; /* Darker color on hover */
+}
+
+
+/* Skills bar styling */
+.skills { 
+  margin-top: 20px; 
+} 
+ 
+.skill { 
+  margin-bottom: 10px; 
+} 
+ 
+.bar { 
+  height: 15px; 
+  line-height: 15px; 
+  color: #fff; 
+  text-align: center; 
+  margin-left: 20px;
+  overflow: hidden; /* Ensures the spans don't overflow */
+}
+
+/* Style for the colored spans */
+.bar span {
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+/* Style for the grey spans */
+.bar span:nth-child(2) {
+  background-color: #ccc;
+}
+
+
+/* Page break styling */
+.page-break {
+  margin: 50px 0;
+  border-top: 1px solid #ccc;
+}
+
+.projects h2, .publications h2, .hobbies h2, .skills h2, .about-me h2{
+  color: #df1a34; 
+}
+
+.projects ul, .hobbies ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+.projects li, .publications li, .hobbies li {
+  margin-bottom: 10px;
+}
